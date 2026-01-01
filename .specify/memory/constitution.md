@@ -1,55 +1,41 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 2.0.0 → 2.1.0 (Minor: Explicit rejection of Documentation/Docusaurus, refinement of functional inputs)
+- Modified Principles:
+  - V. Code-Only Mandate (Replaces Functionality First to explicitly forbid Docusaurus)
+- Templates requiring updates:
+  - specs/master/plan.md (✅ updated)
+  - app/page.tsx (✅ updated)
+-->
+
+# Click-Cafe-OS Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. High-Density Layout (The 3-Block Rule)
+The screen MUST be divided into **3 equal vertical columns**. The layout MUST display exactly 45 rows total, split into 3 sets of 15 rows. Each row must strictly follow the column structure: **[ No. | Name | Time In | Time Out | Amount ]**.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Visual Efficiency
+The interface utilizes a "Deep Dark Blue" (#020617) background with "Neon Cyan" accents ("Yammy" UI). The top-left header MUST display "CLICK SYSTEM".
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Logic-Driven
+Single Source of Truth: Data exists as a single array sliced into 3 views. Interaction includes **Manual Entry** inputs directly in the grid and **Click-to-Highlight** functionality where selected rows sum up in the header.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Integrated Intelligence
+AI is a first-class citizen, embedded via the "Click Intelligence" agent to assist operations.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Code-Only Mandate
+**DO NOT INSTALL DOCUSAURUS.** The project is a pure Next.js 14 application. No external documentation sites or landing pages.
 
-### [PRINCIPLE_6_NAME]
+## Technology Stack
 
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- **Framework**: Next.js 14 (App Router).
+- **Styling**: Tailwind CSS.
+- **Theme**: Dark Mode (#020617 Background, Cyan Text).
+- **Platform**: Windows 10 PWA.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other practices. Amendments require documentation and approval. All code changes must verify compliance with High-Density 3-Block Layout and Visual Efficiency principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 2.1.0 | **Ratified**: 2026-01-01 | **Last Amended**: 2026-01-01
