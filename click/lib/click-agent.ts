@@ -12,6 +12,22 @@ interface GridDataPoint {
   amount: number;
 }
 
+export async function runAgent(messages: { role: string; content: string }[]) {
+  try {
+    const response = await openai.chat.completions.create({
+      model: "gpt-4-turbo",
+      messages: [
+        { role: "system", content: "You are an AI assistant for the Click Management System. Help the user with financial queries." },
+        ...messages
+      ] as any
+    });
+    return response.choices[0].message.content;
+  } catch (error) {
+    console.error("Agent Error:", error);
+    return "Sorry, I encountered an error. Please check your API key.";
+  }
+}
+
 export class ClickAgent {
   /**
    * Analyzes the 3-block grid data.

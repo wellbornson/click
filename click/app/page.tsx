@@ -57,7 +57,7 @@ type ModalType = 'generator' | 'tea' | null;
 type StatPeriod = 'daily' | 'monthly' | 'yearly';
 type ChatMessage = { sender: 'user' | 'ai'; text: string; isSecure?: boolean };
 type AuthAction = { type: 'ACCESS_HQ' } | { type: 'UNLOCK_ROW', id: number } | { type: 'RATE_WORKER', workerId: number, rating: number } | { type: 'DELETE_WORKER', id: number } | { type: 'DELETE_EXPENSE', id: number };
-type AiContextType = { status: 'IDLE' | 'WAITING_FOR_TYPE' | 'WAITING_FOR_DATE' | 'WAITING_FOR_TOP_PERIOD' | 'WAITING_FOR_FINANCIAL_PERIOD'; targetName: string; intent: 'DETAIL' | 'TOP_USER' | 'TOP_3' | 'FINANCIAL_REPORT'; };
+type AiContextType = { status: 'IDLE' | 'WAITING_FOR_TYPE' | 'WAITING_FOR_DATE' | 'WAITING_FOR_TOP_PERIOD' | 'WAITING_FOR_FINANCIAL_PERIOD'; targetName: string; intent: 'DETAIL' | 'TOP_USER' | 'TOP_3' | 'FINANCIAL_REPORT' | 'PROFIT_LOSS'; };
 
 export default function ClickDashboard() {
   const [currentView, setCurrentView] = useState<ViewState>('users');
